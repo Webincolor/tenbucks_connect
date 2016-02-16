@@ -1,20 +1,29 @@
 <?php
-
 /**
  * Tenbucks
  *
  * NOTICE OF LICENSE
  *
- * This source file is subject to the EULA
- * that is bundled with this package in the file tb-LICENSE.txt.
+ * This source file is subject to the Open Software License (OSL 3.0)
+ * that is bundled with this package in the file LICENSE.txt.
  * It is also available through the world-wide-web at this URL:
- * https://www.tenbucks.io/tb-LICENSE.txt
+ * http://opensource.org/licenses/osl-3.0.php
+ * If you did not receive a copy of the license and are unable to
+ * obtain it through the world-wide-web, please send an email
+ * to hello@tenbucks.io so we can send you a copy immediately.
  *
- * @package     Tenbucks_Connect
- * @copyright   Copyright (c) 2016 Tenbucks (https://www.tenbucks.io)
- * @author	Tenbucks <hello@tenbucks.io>
+ * DISCLAIMER
  *
+ * Do not edit or add to this file if you wish to upgrade Tenbucks to newer
+ * versions in the future.
+ *
+ * @category   Tenbucks
+ * @package    Tenbucks_Connect
+ * @copyright  Copyright (c) 2016 Tenbucks. (https://www.tenbucks.io)
+ * @license    http://opensource.org/licenses/osl-3.0.php  Open Software License (OSL 3.0)
+ * @author      Tenbucks <hello@tenbucks.io>
  */
+
 require_once(Mage::getBaseDir('lib') . '/tenbucks/TenbucksKeysClient.php');
 
 $installer = $this;
