@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<config>
+    <menu>
+        <tenbucks module="tenbucks_connect" translate="title">
+            <title>Tenbucks.</title>
+            <sort_order>71</sort_order>
+            <class>tenbucks</class>
+            <children>
+                <apps module="tenbucks_connect" translate="title">
+                    <title>My Applications</title>
+                    <sort_order>10</sort_order>
+                    <action>adminhtml/tenbucks/connect</action>
+                </apps>
+                <account module="tenbucks_connect" translate="title">
+                    <title>My Account</title>
+                    <sort_order>20</sort_order>
+                    <action>adminhtml/tenbucks/connect/redirect/account</action>
+                </account>
+                <configuration module="tenbucks_connect" translate="title">
+                    <title>Configuration</title>
+                    <sort_order>30</sort_order>
+                    <action>adminhtml/system_config/edit/section/tenbucks_connect</action>
+                </configuration>
+            </children>
+        </tenbucks>
+    </menu>
+    <acl>
+        <resources>
+            <admin>
+                <children>
+                    <tenbucks module="tenbucks_connect" translate="title">
+                        <title>Tenbucks.</title>
+                        <sort_order>1</sort_order>
+                        <children>
+                            <apps translate="title">
+                                <title>My Applications</title>
+                            </apps>
+                            <account translate="title">
+                                <title>My Account</title>
+                            </account>
+                            <configuration translate="title">
+                                <title>Configuration</title>
+                            </configuration>
+                        </children>
+                    </tenbucks>
+                    <system>
+                        <children>
+                            <config>
+                                <children>
+                                    <tenbucks_connect>
+                                        <title>Tenbucks. Connect</title>                                        
+                                    </tenbucks_connect>
+                                </children>
+                            </config>
+                        </children>
+                    </system>
+                </children>
+            </admin>
+        </resources>
+    </acl>
+</config>

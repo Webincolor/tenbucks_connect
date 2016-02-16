@@ -1,0 +1,30 @@
+<?php
+/**
+ * Tenbucks
+ *
+ * NOTICE OF LICENSE
+ *
+ * This source file is subject to the EULA
+ * that is bundled with this package in the file tb-LICENSE.txt.
+ * It is also available through the world-wide-web at this URL:
+ * https://www.tenbucks.io/tb-LICENSE.txt
+ * 
+ * @package     Tenbucks_Connect
+ * @copyright   Copyright (c) 2016 Tenbucks (https://www.tenbucks.io)
+ * @author	Tenbucks <hello@tenbucks.io>
+ * 
+ */
+?>
+<div class="content-header">
+    <table cellspacing="0">
+        <tr>
+            <td><h3><?php echo $this->getHeaderText() ?></h3></td>
+            <td class="form-buttons">
+                <?php echo $this->getButtonsHtml() ?>
+            </td>
+        </tr>
+    </table>
+</div>
+<div class="content">
+    <iframe style="width:100%;height:100%;border:0 none;min-height:600px;" id="tenbucks_iframe" src="<?php echo $this->getIframeUrl() ?>"></iframe>
+</div>
